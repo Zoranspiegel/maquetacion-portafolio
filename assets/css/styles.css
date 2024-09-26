@@ -21,6 +21,7 @@ html {
 
 body {
   width: 100%;
+  height: 100%;
   height: auto;
   font-family: 'Poppins', Helvetica, sans-serif;
   font-size: 1.5rem;
@@ -38,3 +39,20 @@ h6 {
 }
 
 /* ESTRUCTURA PRINCIPAL */
+
+.layout {
+  position: relative;
+  min-width: 1290px;
+  width: 75%;
+  height: 80vh;
+  min-height: 80vh;
+  margin: 10vh auto;
+
+  display: grid;
+  grid-template-areas: 'aside content';
+  grid-template-columns: 30% 70%;
+
+  /* Sombra detras del layout */
+  border-radius: 4rem;
+  box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
+}
