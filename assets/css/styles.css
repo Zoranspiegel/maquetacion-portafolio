@@ -27,6 +27,7 @@ body {
   font-size: 1.5rem;
   background-color: var(--color-background);
   color: var(--color-text);
+  overflow: hidden;
 }
 
 h1,
@@ -36,6 +37,14 @@ h4,
 h5,
 h6 {
   color: var(--color-title);
+}
+
+/* IMAGEN DE FONDO */
+body {
+  background-image: url('../img/fondo.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 60px -120px;
 }
 
 /* ESTRUCTURA PRINCIPAL */
@@ -55,4 +64,45 @@ h6 {
   /* Sombra detras del layout */
   border-radius: 4rem;
   box-shadow: 0 0 100px -5px rgba(0, 0, 0, 0.25);
+}
+
+/* BARRA LATERAL AZUL */
+.layout__aside {
+  grid-area: aside;
+  border-radius: 4rem 0 0 4rem;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
+.aside__user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  min-height: 100%;
+  min-width: 30rem;
+
+  background-color: var(--color-secondary);
+  /* color: var(--color-principal); */
+}
+
+.user-info__container-image {
+  position: relative;
+  display: inline-block;
+  width: 18rem;
+  margin-top: 7rem;
+  background-color: var(--color-principal);
+  border: 3px solid var(--color-principal);
+  border-radius: 20rem;
+  overflow: hidden;
+}
+
+.user-info__image {
+  width: 100%;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.layout__content {
+  grid-area: content;
 }
