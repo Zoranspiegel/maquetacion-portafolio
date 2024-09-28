@@ -187,11 +187,36 @@ body {
   font-size: 1.2rem;
 }
 
-.layout__menu {
-  display: none !important;
-}
-
 /* CONTENEDOR PRINCIPAL */
 .layout__content {
   grid-area: content;
+  background-color: var(--color-secondary);
+  border-radius: 0 10rem 10rem 0;
+}
+
+.content__page {
+  min-height: 100%;
+  background-color: var(--color-principal);
+  border-radius: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.page__name {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+.page__job {
+  font-size: 2.1rem;
+  font-weight: lighter;
+  color: var(--color-subtitle);
+}
+
+/* PROVISIONAL */
+.layout__menu {
+  display: none !important;
 }
