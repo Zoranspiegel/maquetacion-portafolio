@@ -2,9 +2,10 @@
 
 :root {
   --color-principal: #ffffff;
-  --color-secondary: #04b4e0;
+  --color-secondary: #00249c;
 
-  --color-background: #f2f7f9;
+  /* --color-background: #f2f7f9; */
+  --color-background: #bbb;
   --color-transparent: transparent;
 
   --color-icon: #b5b6b7;
@@ -179,6 +180,7 @@ body {
   background-color: var(--color-principal);
   color: var(--color-secondary);
   transition: all 300ms ease-in-out;
+  font-weight: bold;
 }
 
 .user-info__footer {
@@ -205,6 +207,15 @@ body {
   align-items: center;
 }
 
+.page__name-container {
+  display: flex;
+}
+
+.page__capital {
+  width: 8rem;
+  height: 8rem;
+}
+
 .page__name {
   font-size: 6rem;
   margin-bottom: 1rem;
@@ -216,7 +227,61 @@ body {
   color: var(--color-subtitle);
 }
 
-/* PROVISIONAL */
+/* MENU NAVEGACION LATERAL */
 .layout__menu {
-  display: none !important;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: -105px;
+  min-width: 11rem;
+  background-color: var(--color-transparent);
+}
+
+.menu__list {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 60%;
+  min-height: 32rem;
+  padding: 2rem 0;
+  margin-left: 2.5rem;
+  background-color: var(--color-principal);
+  box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
+  border-radius: 6rem;
+}
+
+.menu__option {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.menu__option:hover .menu__icon {
+  color: var(--color-secondary);
+}
+
+.menu__icon {
+  color: var(--color-icon);
+  font-size: 2.8rem;
+  transition: all 300ms ease-in-out;
+}
+
+.menu__overlay {
+  position: absolute;
+  right: 0;
+  margin-top: -3rem;
+  opacity: 0;
+  padding: 0.5rem 1rem;
+  display: block;
+  color: var(--color-principal);
+  background-color: var(--color-secondary);
+  white-space: nowrap;
+  transition: all 300ms ease-in-out;
+}
+
+.menu__option:hover .menu__overlay {
+  opacity: 1;
+  right: 100%;
 }
