@@ -58,3 +58,8 @@ label {
   display: block;
   color: inherit;
 }
+
+/* "-webkit-any(article, aside, nav, section) h1 rule" fix */
+h1 {
+  font-size: 2em;
+}

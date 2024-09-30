@@ -2,7 +2,7 @@
 
 :root {
   --color-principal: #ffffff;
-  --color-secondary: #00249c;
+  --color-secondary: #0f2b86;
 
   /* --color-background: #f2f7f9; */
   --color-background: #bbb;
@@ -23,7 +23,6 @@ html {
 body {
   width: 100%;
   height: 100%;
-  height: auto;
   font-family: 'Poppins', Helvetica, sans-serif;
   font-size: 1.5rem;
   background-color: var(--color-background);
@@ -192,6 +191,8 @@ body {
 /* CONTENEDOR PRINCIPAL */
 .layout__content {
   grid-area: content;
+  height: 100%;
+  min-height: 100%;
   background-color: var(--color-secondary);
   border-radius: 0 10rem 10rem 0;
 }
@@ -205,15 +206,6 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-.page__name-container {
-  display: flex;
-}
-
-.page__capital {
-  width: 8rem;
-  height: 8rem;
 }
 
 .page__name {
@@ -284,4 +276,14 @@ body {
 .menu__option:hover .menu__overlay {
   opacity: 1;
   right: 100%;
+}
+
+/* SOBRE MÍ */
+.content__about {
+  display: block;
+  height: 100%;
+  min-height: 100%;
+  padding: 6rem;
+  padding-right: 3rem;
+  overflow: auto;
 }
