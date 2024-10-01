@@ -198,7 +198,7 @@ h6 {
   min-height: 100%;
   background-color: var(--color-secondary);
   border-radius: 0 10rem 10rem 0;
-  z-index: -2;
+  /* z-index: -2; */
 }
 
 .content__page {
@@ -238,7 +238,6 @@ h6 {
 }
 
 .page__job {
-  font-family: 'Lato', Helvetica, sans-serif !important;
   margin-top: 1rem;
   font-size: 2.1rem;
   font-weight: 400;
@@ -253,6 +252,7 @@ h6 {
   right: -105px;
   min-width: 11rem;
   background-color: var(--color-transparent);
+  z-index: 1;
 }
 
 .menu__list {
@@ -268,6 +268,7 @@ h6 {
   background-color: var(--color-principal);
   box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
   border-radius: 6rem;
+
 }
 
 .menu__option {
