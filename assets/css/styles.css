@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 /* VARIABLES */
 
 :root {
   --color-principal: #ffffff;
-  --color-secondary: #091c58;
+  --color-secondary: #0d2470;
 
   /* --color-background: #f2f7f9; */
-  --color-background: #bbb;
+  --color-background: #181818;
   --color-transparent: transparent;
 
   --color-icon: #b5b6b7;
@@ -23,7 +25,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  font-family: 'Poppins', Helvetica, sans-serif;
+  font-family: 'Lato', Helvetica, sans-serif;
   font-size: 1.5rem;
   background-color: var(--color-background);
   color: var(--color-text);
@@ -40,12 +42,12 @@ h6 {
 }
 
 /* IMAGEN DE FONDO */
-body {
+/* body {
   background-image: url('../img/fondo.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 60px -120px;
-}
+} */
 
 /* ESTRUCTURA PRINCIPAL */
 
@@ -131,7 +133,7 @@ body {
 
 .user-info__job {
   font-size: 1.7rem;
-  font-weight: 200;
+  font-weight: 400;
   color: var(--color-principal);
 }
 
@@ -173,13 +175,14 @@ body {
   border-radius: 3.2rem;
   color: var(--color-principal);
   box-shadow: 0 10px 10px -8px rgba(0, 0, 0, 0.22);
+  font-weight: bold;
 }
 
 .user-info__btn:hover {
   background-color: var(--color-principal);
   color: var(--color-secondary);
   transition: all 300ms ease-in-out;
-  font-weight: bold;
+  font-weight: bolder;
 }
 
 .user-info__footer {
@@ -199,6 +202,16 @@ body {
 }
 
 .content__page {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    font-family: 'Metamorphous', serif;
+  }
+}
+
+.content__page {
   min-height: 100%;
   background-color: var(--color-principal);
   border-radius: 3.2rem;
@@ -209,14 +222,26 @@ body {
   align-items: center;
 }
 
+.page__name-container {
+  display: flex;
+  align-items: end;
+}
+
+.page__name-capital {
+  width: 7rem;
+}
+
 .page__name {
   font-size: 4.2rem;
   margin-bottom: 1rem;
+  line-height: 2rem;
 }
 
 .page__job {
+  font-family: 'Lato', Helvetica, sans-serif !important;
+  margin-top: 1rem;
   font-size: 2.1rem;
-  font-weight: lighter;
+  font-weight: 400;
   color: var(--color-subtitle);
 }
 
@@ -277,7 +302,7 @@ body {
 }
 
 .menu__option:hover .menu__overlay {
-  opacity: 0.7;
+  opacity: 0.8;
   right: 100%;
 }
 
