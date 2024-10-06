@@ -5,6 +5,7 @@
 :root {
   --color-principal: #ffffff;
   --color-secondary: #0d2470;
+  --color-secondary-light: #183aac;
 
   /* --color-background: #f2f7f9; */
   --color-background: #181818;
@@ -268,7 +269,6 @@ h6 {
   background-color: var(--color-principal);
   box-shadow: 0 0 3rem -0.5rem rgba(0, 0, 0, 0.15);
   border-radius: 6rem;
-
 }
 
 .menu__option {
@@ -277,7 +277,8 @@ h6 {
   text-align: center;
 }
 
-.menu__option:hover .menu__icon {
+.menu__option:hover .menu__icon,
+.menu__link--active .menu__icon{
   color: var(--color-secondary);
 }
 
@@ -315,4 +316,90 @@ h6 {
   padding: 6rem;
   padding-right: 3rem;
   overflow: auto;
+}
+
+.about__header {
+  margin-bottom: 4.5rem;
+}
+
+.about__title {
+  font-size: 3.2rem;
+  position: relative;
+}
+
+.title__color {
+  color: var(--color-secondary-light);
+}
+
+/* INFORMACIÓN PERSONAL */
+.about__personal-info {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.personal-info__bio {
+  flex-basis: 56%;
+}
+
+.personal-info__description {
+  font-size: 1.5rem;
+  line-height: 2.4rem;
+}
+
+.personal-info__data {
+  flex-basis: 44%;
+  padding: 0 1.5rem;
+}
+
+.personal-info__option {
+  margin-bottom: 1rem;
+}
+
+.personal-info__title {
+  margin-right: 0.5rem;
+  color: var(--color-secondary-light);
+  font-weight: 600;
+}
+
+/* SERVICIOS */
+.about__services {
+  width: 100%;
+  margin-bottom: 3rem;
+}
+
+.services__header {
+  display: inline-block;
+  padding-right: 1.2rem;
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.services__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.services__service {
+  flex-basis: calc(50% - 3rem);
+  margin-right: 3rem;
+  margin-bottom: 2.5rem;
+}
+
+.service__real-icon {
+  color: var(--color-secondary-light);
+  font-size: 3.8rem;
+}
+
+.service__title {
+  font-size: 1.8rem;
+  margin: 0.5rem 0;
+}
+
+.service__description {
+  font-size: 1.5rem;
+  text-align: justify;
 }

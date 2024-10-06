@@ -21,7 +21,7 @@
 
 .content__page:hover::-webkit-scrollbar-thumb:hover {
   border: 9px solid transparent;
-  box-shadow: inset 0 0 0 10px var(--color-secondary);
+  box-shadow: inset 0 0 0 10px var(--color-secondary-light);
 }
 
 .content__page::-webkit-scrollbar-track {
