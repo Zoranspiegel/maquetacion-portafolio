@@ -202,14 +202,13 @@ h6 {
   /* z-index: -2; */
 }
 
-.content__page {
-  h1,
-  h2,
-  h3,
-  h4,
-  h5 {
-    font-family: 'Metamorphous', serif;
-  }
+.content__page h1,
+.content__page h2,
+.content__page h3,
+.content__page h4,
+.content__page h5,
+.content__page h6 {
+  font-family: 'Metamorphous', serif;
 }
 
 .content__page {
@@ -278,7 +277,7 @@ h6 {
 }
 
 .menu__option:hover .menu__icon,
-.menu__link--active .menu__icon{
+.menu__link--active .menu__icon {
   color: var(--color-secondary);
 }
 
@@ -308,8 +307,9 @@ h6 {
   right: 100%;
 }
 
-/* SOBRE MÍ */
-.content__about {
+/* ESTILOS GENERALES (SOBRE MÍ, CURRICULUM, ETC.) */
+.content__about,
+.content__resume {
   display: block;
   height: 100%;
   min-height: 100%;
@@ -318,11 +318,13 @@ h6 {
   overflow: auto;
 }
 
-.about__header {
+.about__header,
+.resume__header {
   margin-bottom: 4.5rem;
 }
 
-.about__title {
+.about__title,
+.resume__title {
   font-size: 3.2rem;
   position: relative;
 }
@@ -403,3 +405,4 @@ h6 {
   font-size: 1.5rem;
   text-align: justify;
 }
+
