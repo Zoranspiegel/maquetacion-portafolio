@@ -329,7 +329,8 @@ h6 {
   position: relative;
 }
 
-.title__color {
+.title__color,
+.subtitle__color {
   color: var(--color-secondary-light);
 }
 
@@ -365,13 +366,14 @@ h6 {
   font-weight: 600;
 }
 
-/* SERVICIOS */
+/* SERVICIOS GENERALES COMPARTIDOS*/
 .about__services {
   width: 100%;
   margin-bottom: 3rem;
 }
 
-.services__header {
+.services__header,
+.resume__subheader {
   display: inline-block;
   padding-right: 1.2rem;
   margin-bottom: 2.5rem;
@@ -396,7 +398,8 @@ h6 {
   font-size: 3.8rem;
 }
 
-.service__title {
+.service__title,
+.resume__subtitle {
   font-size: 1.8rem;
   margin: 0.5rem 0;
 }
@@ -406,3 +409,87 @@ h6 {
   text-align: justify;
 }
 
+/* CURRICULUM */
+
+.resume__container {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.resume__left {
+  flex-basis: 58%;
+  margin-right: 1.5rem;
+}
+
+.resume__timelines {
+  margin-bottom: 5rem;
+}
+
+.timelines__timeline {
+  position: relative;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: flex;
+}
+
+.timeline__header {
+  flex-basis: 30%;
+  text-align: right;
+  padding-right: 2.5rem;
+}
+
+.timeline__year {
+  margin: 0.3rem 0;
+  line-height: 1.9rem;
+  font-size: 1.4rem;
+}
+
+.timeline__company {
+  display: block;
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: var(--color-subtitle);
+}
+
+.timeline__divider {
+  position: absolute;
+  top: 0;
+  left: 30%;
+  bottom: -18%;
+  width: 1px;
+  background-color: var(--color-scrollbar);
+}
+
+.timeline__divider::after {
+  content: "";
+  position: absolute;
+  margin-top: 0.78rem;
+  margin-left: -0.65rem;
+  width: 1.2rem;
+  height: 1.2rem;
+  background-color: var(--color-principal);
+  border: 7px outset var(--color-secondary-light);
+  transform: rotate(45deg);
+  opacity: 1;
+}
+
+.timeline__description {
+  flex-basis: 70%;
+  padding-left: 2.5rem;
+  padding-right: 1.5rem;
+}
+
+.timeline__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+}
+
+.timeline__text {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.resume__right {
+  flex-basis: 41%;
+}
