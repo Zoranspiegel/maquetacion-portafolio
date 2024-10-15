@@ -11,6 +11,8 @@
   --color-background: #181818;
   --color-transparent: transparent;
 
+  --color-background-certificates: #f5f5f5;
+
   --color-icon: #b5b6b7;
   --color-title: #202020;
   --color-subtitle: #808080;
@@ -560,4 +562,73 @@ h6 {
 }
 .skills__percentage--p9 {
   width: 81%;
+}
+
+.knowledges__list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.knowledges__option {
+  padding: 0.4rem 1rem;
+  margin: 0.3rem;
+  font-size: 1.4rem;
+  background-color: var(--color-secondary-light);
+  border-radius: 0.3rem;
+  color: var(--color-principal);
+}
+
+/* CERTIFICADOS */
+
+.certificates__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+
+.certificates__certificate {
+  display: flex;
+  flex-direction: row;
+  flex-basis: calc(50% - 1.5rem);
+  border: 2px solid var(--color-icon);
+  border-radius: 0.8rem;
+}
+
+.certificate__logo {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 15rem;
+  height: 100%;
+  padding: 2.5rem;
+  background-color: var(--color-background-certificates);
+  border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.certificate__image {
+  width: 100%;
+}
+
+.certificate__content {
+  padding: 2rem 2.5rem;
+}
+
+.certificate__title {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.certificate__id {
+  display: block;
+  font-size: 1.3rem;
+  color: var(--color-subtitle);
+  margin-bottom: 0.3rem;
+}
+
+.certificate__date {
+  font-size: 1rem;
+  color: var(--color-subtitle);
+  opacity: 0.9;
 }
