@@ -311,7 +311,8 @@ h6 {
 
 /* ESTILOS GENERALES (SOBRE MÍ, CURRICULUM, ETC.) */
 .content__about,
-.content__resume {
+.content__resume,
+.content__portfolio {
   display: block;
   height: 100%;
   min-height: 100%;
@@ -321,12 +322,14 @@ h6 {
 }
 
 .about__header,
-.resume__header {
+.resume__header,
+.portfolio__header {
   margin-bottom: 4.5rem;
 }
 
 .about__title,
-.resume__title {
+.resume__title,
+.portfolio__title {
   font-size: 3.2rem;
   position: relative;
 }
