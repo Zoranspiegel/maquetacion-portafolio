@@ -322,7 +322,7 @@ h6 {
 
 .about__header,
 .resume__header {
-  margin-bottom: 4.5rem;
+  margin-bottom: 2.5rem;
 }
 
 .about__title,
@@ -342,7 +342,8 @@ h6 {
   display: flex;
   flex-direction: row;
   width: 100%;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
+  gap: 3rem;
 }
 
 .personal-info__bio {
@@ -352,6 +353,7 @@ h6 {
 .personal-info__description {
   font-size: 1.5rem;
   line-height: 2.4rem;
+  text-align: justify;
 }
 
 .personal-info__data {
@@ -394,6 +396,9 @@ h6 {
   flex-basis: calc(50% - 3rem);
   margin-right: 3rem;
   margin-bottom: 2.5rem;
+  padding: 1rem;
+  /* border: 3px solid var(--color-secondary-light); */
+  /* border-radius: 1rem; */
 }
 
 .service__real-icon {
@@ -600,7 +605,7 @@ h6 {
 .certificate__logo {
   display: flex;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
   width: 15rem;
   height: 100%;
   padding: 2.5rem;
@@ -641,7 +646,7 @@ h6 {
 }
 
 .blog__image-container::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
