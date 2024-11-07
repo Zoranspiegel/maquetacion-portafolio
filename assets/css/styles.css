@@ -600,6 +600,42 @@ h6 {
   width: 50%;
 }
 
+/* IDIOMAS */
+
+.languages__levels {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 1px;
+}
+
+.language__level {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  padding: 1rem;
+  background-color: var(--color-principal);
+  border: solid 2px var(--color-secondary-light);
+  color: var(--color-secondary-light);
+  font-weight: bold;
+  font-family: MedievalSharp;
+  line-height: 0;
+  font-size: 2rem;
+  border-radius: 0.5rem;
+}
+
+.language__level--active {
+  width: 4.5rem;
+  height: 4.5rem;
+  background-color: var(--color-secondary-light);
+  border: 4px double var(--color-principal);
+  color: var(--color-principal);
+}
+
+/* CONOCIMIENTOS */
+
 .knowledges__list {
   display: flex;
   flex-direction: row;
