@@ -540,32 +540,64 @@ h6 {
   border-radius: 1rem;
 }
 
-.skills__percentage--p1 {
-  width: 90%;
+/* HABILIDADES DE FRONT-END */
+
+.skills__percentage--a1 {
+  width: 80%;
 }
-.skills__percentage--p2 {
-  width: 70%;
-}
-.skills__percentage--p3 {
+.skills__percentage--a2 {
   width: 60%;
 }
-.skills__percentage--p4 {
-  width: 80%;
+.skills__percentage--a3 {
+  width: 70%;
 }
-.skills__percentage--p5 {
-  width: 97%;
+.skills__percentage--a4 {
+  width: 60%;
 }
-.skills__percentage--p6 {
-  width: 85%;
+.skills__percentage--a5 {
+  width: 50%;
 }
-.skills__percentage--p7 {
-  width: 80%;
+.skills__percentage--a6 {
+  width: 60%;
 }
-.skills__percentage--p8 {
-  width: 92%;
+.skills__percentage--a7 {
+  width: 30%;
 }
-.skills__percentage--p9 {
-  width: 81%;
+
+/* HABILIDADES DE BACK-END */
+
+.skills__percentage--b1 {
+  width: 50%;
+}
+.skills__percentage--b2 {
+  width: 60%;
+}
+.skills__percentage--b3 {
+  width: 60%;
+}
+.skills__percentage--b4 {
+  width: 50%;
+}
+.skills__percentage--b5 {
+  width: 40%;
+}
+
+/* HABILIDADES DE BASES DE DATOS */
+
+.skills__percentage--c1 {
+  width: 50%;
+}
+.skills__percentage--c2 {
+  width: 50%;
+}
+.skills__percentage--c3 {
+  width: 60%;
+}
+.skills__percentage--c4 {
+  width: 70%;
+}
+.skills__percentage--c5 {
+  width: 50%;
 }
 
 .knowledges__list {
@@ -584,12 +616,16 @@ h6 {
 }
 
 /* CERTIFICADOS */
-
 .certificates__container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
+}
+
+.certificates__certificate:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 20px #444;
 }
 
 .certificates__certificate {
@@ -598,13 +634,16 @@ h6 {
   flex-basis: calc(50% - 1.5rem);
   border: 2px solid var(--color-icon);
   border-radius: 0.8rem;
+  transition: all 200ms ease-in-out;
+  box-shadow: 1px 1px 1px #444;
 }
 
 .certificate__logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 15rem;
+  min-width: 15rem;
+  max-width: 15rem;
   height: 100%;
   padding: 2.5rem;
   background-color: var(--color-background-certificates);
@@ -616,7 +655,7 @@ h6 {
 }
 
 .certificate__content {
-  padding: 2rem 2.5rem;
+  padding: 2rem;
 }
 
 .certificate__title {
@@ -626,7 +665,7 @@ h6 {
 
 .certificate__id {
   display: block;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: var(--color-subtitle);
   margin-bottom: 0.3rem;
 }
