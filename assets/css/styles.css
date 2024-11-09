@@ -732,6 +732,7 @@ h6 {
 }
 
 /* PORTAFOLIO */
+
 .portfolio__cards-container {
   margin-top: 2rem;
   display: flex;
@@ -747,6 +748,11 @@ h6 {
   border-radius: 0.8rem;
   transition: all 200ms ease-in-out;
   box-shadow: 1px 1px 1px #444;
+}
+
+.portfolio__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 8px 8px 20px #444;
 }
 
 .portfolio__card:hover .card__image {
