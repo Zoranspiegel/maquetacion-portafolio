@@ -827,9 +827,38 @@ h6 {
 /* CONTACTO */
 
 .content__connect {
+  position: relative;
   height: 100%;
   width: 100%;
 }
+
+.connect__frame-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.connect__frame {
+  opacity: 0.2;
+  height: 61vh;
+  filter: grayscale(100%);
+}
+
+/* .connect__frame-container::after {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  background-color: black;
+  mix-blend-mode: color;
+} */
 
 .connect__card {
   border: 2px solid var(--color-icon);
@@ -837,17 +866,49 @@ h6 {
   border-radius: 1rem;
   width: 40%;
   height: 40%;
-  animation: 2s flip both;
+  animation: 3s flip both;
+  overflow: hidden;
 }
 
-@keyframes flip {
+@keyframes flip {  
   100% {
-    opacity: 1;
     transform: rotateY(180deg);
   }
 }
 
-.connect__content {
+.card__backside-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  object-position: center;
+}
+
+.card__backside {
+  height: 50%;
+  animation: 3s flip-backside both;
+  opacity: 0;
+}
+
+@keyframes flip-backside {
+  0% {
+    opacity: 0.2;
+  }
+  29% {
+    opacity: 0.2;
+  }
+  30% {
+    opacity: 0;
+  }
+}
+
+.connect__content {  
+  border: 10px double #ddd;
+  border-radius: 0.75rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -856,7 +917,7 @@ h6 {
   height: 100%;
   padding: 4rem;
   transform: rotateY(180deg);
-  animation: 2s show both;
+  animation: 3s show both;
 }
 
 @keyframes show {
@@ -883,9 +944,10 @@ h6 {
   height: 100%;
   width: 100%;
   flex-direction: column;
+  gap: 4px;
 }
 
-.content__connection {
+.content__connection {  
   display: flex;
   height: 100%;
   width: 100%;
@@ -893,15 +955,25 @@ h6 {
   justify-content: space-between;
 }
 
-.connection__info {
+.connection__info {  
   font-size: 1vw;
+  font-weight: bold;
 }
 
 .connection__icon {
-  border: 1px solid black;
+  border: 2px solid var(--color-text);
+  color: var(--color-text);
   border-radius: 50%;
-  width: 4rem;
-  height: 4rem;
+  width: 3.5rem;
+  height: 3.5rem;
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
+  transition: all 300ms ease-in-out;
+}
+
+.connection__icon:hover {
+  color: var(--color-principal);
+  background-color: var(--color-text);
+  border-color: var(--color-text);
+  transform: scale3d(1.2, 1.2, 1.2);
 }
