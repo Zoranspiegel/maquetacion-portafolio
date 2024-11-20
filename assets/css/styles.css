@@ -9,7 +9,7 @@
 
   /* --color-background: #f2f7f9; */
   --color-background: #181818;
-  --color-card-background: #20202080;
+  --color-card-background: #202020a0;
   --color-transparent: transparent;
 
   --color-background-certificates: #f5f5f5;
@@ -801,6 +801,8 @@ h6 {
 }
 
 .card__text {
+  font-weight: 300;
+  font-size: 0.8vw;
 }
 
 .card__buttons-container {
@@ -831,7 +833,7 @@ h6 {
 
 .connect__card {
   border: 2px solid var(--color-icon);
-  box-shadow: -1px 1px 1px #444;
+  box-shadow: 0px 8px 20px -1px #777;
   border-radius: 1rem;
   width: 40%;
   height: 40%;
@@ -839,13 +841,9 @@ h6 {
 }
 
 @keyframes flip {
-  0% {
-    opacity: 0;
-  }
   100% {
     opacity: 1;
     transform: rotateY(180deg);
-    box-shadow: 0px 8px 20px -1px #777;
   }
 }
 
@@ -865,10 +863,10 @@ h6 {
   0% {
     opacity: 0;
   }
-  20% {
+  29% {
     opacity: 0;
   }
-  100% {
+  30% {
     opacity: 1;
   }
 }
